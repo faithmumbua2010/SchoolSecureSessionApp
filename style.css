@@ -1,0 +1,148 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Light pink background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Container for content */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 2rem;
+    color: #d81b60; /* Pink color */
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #d81b60;
+    margin: 20px 0 10px;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: #c2185b;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+form.post-form {
+    background-color: #fff0f6;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+label {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: 10px;
+    border: 2px solid #d81b60;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f8bbd0; /* Light pink input background */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #d81b60;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #d81b60; /* Pink button */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Link Styles */
+a {
+    color: #d81b60; /* Pink color */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Logout Link */
+.logout-link {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Post Container */
+.post {
+    text-align: left;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #fff0f6;
+}
+
+/* Edit and Delete Forms */
+.edit-form,
+.delete-form {
+    margin-top: 10px;
+}
+
+/* Error messages */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    background-color: #f8d7da; /* Light red background */
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
